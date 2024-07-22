@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #0066ff, #00ccff);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #0073e6;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #0073e6;
+            margin: 0.5rem auto;
+            border-radius: 5px;
+        }
+        .project {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .project-description {
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .contact-form {
+            background: white;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.75rem 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            padding: 0.75rem 1.5rem;
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我的个人网页</h1>
+    </header>
+
+    <div class="container">
+        <section id="projects">
+            <h2 class="section-title">项目展示</h2>
+            <div class="project">
+                <h3>项目 1</h3>
+                <div class="project-description">
+                    <p>项目 1 的简要描述。可以包括项目的主要功能、技术栈以及你的角色和贡献。</p>
+                </div>
+            </div>
+            <div class="project">
+                <h3>项目 2</h3>
+                <div class="project-description">
+                    <p>项目 2 的简要描述。可以包括项目的主要功能、技术栈以及你的角色和贡献。</p>
+                </div>
+            </div>
+            <!-- 你可以根据需要添加更多项目 -->
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">电子邮件：</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">消息：</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">发送</button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

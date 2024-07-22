@@ -1,0 +1,6 @@
+UniLedgeName: str = "Accounts/UniLedger.npy"
+OtherUniLedgeName: str = "AccountsOthers/UniLedger.npy"
+userprofile:str = "Accounts/UserProfile001.npy"
+Otheruserprofile:str = "AccountsOthers/UserProfile001.npy"
+sendIpFileName:str="sendIp.txt"
+othersAccdir:str="AccountsOthers/"
